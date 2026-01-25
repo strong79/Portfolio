@@ -244,6 +244,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **GitHub**: [Your GitHub]
 - **Email**: [Your Email]
 
----
-
 **Built with ❤️ and optimized for performance**
