@@ -30,7 +30,7 @@ const ProjectsMain = () => {
             name="InspiraPix"
             year="Mar 2025"
             align="right"
-            image="/images/website-img-1.jpg"
+            image="/images/website-img-1.png"
             link="https://inspirapix.vercel.app/"
           />
         </motion.div>

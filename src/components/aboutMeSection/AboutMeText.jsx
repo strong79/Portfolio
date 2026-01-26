@@ -89,7 +89,7 @@ const AboutMeText = () => {
             backend development
           </span>
           , learning the full{" "}
-          <span className="text-orange font-semibold">MERN stack</span>{" "}
+          <span className="text-orange font-semibold">FULL stack</span>{" "}
           to become a well-rounded full-stack developer. I&apos;m constantly exploring technologies like{" "}
           <span className="text-green font-mono text-sm">Node.js</span>,{" "}
           <span className="text-cyan font-mono text-sm">Express</span>, and{" "}

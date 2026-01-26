@@ -68,7 +68,7 @@ const HeroText = () => {
         <p className="text-lg text-white/80 leading-relaxed">
           Passionate and skilled{" "}
           <span className="text-yellow font-semibold px-2 py-1 bg-yellow/10 rounded border border-yellow/20">
-            MERN stack
+            FULL stack
           </span>{" "}
           developer with experience in building{" "}
           <span className="text-cyan font-semibold">full-stack applications</span>{" "}

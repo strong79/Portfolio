@@ -1,64 +1,47 @@
  [
  {
-    "job": "React Developer",
-    "company": "Celebal Technologies",
-    "date": "2025 - Present",
-    "location": "Remote",
+    "job": "Full stack Developer",
+    "company": "Discord Hammer AI community",
+    "date": "2022.5 - 2025.7",
+    "location": "Remote, US",
     "status": "Current",
-    "technologies": ["React", "JavaScript", "Node.js", "Tailwind CSS"],
+    "technologies": ["React", "Next.js", "Tailwind CSS", "AI"],
     "responsibilities": [
       "Developed and maintained 15+ reusable React components used across multiple projects",
       "Collaborated with cross-functional teams to implement scalable web applications",
       "Optimized application performance resulting in 40% faster load times",
-      "Mentored junior developers and conducted code reviews",
+      "Mentored senior developers and conducted code reviews",
+      "Voice distinction and image generation with Powerful AI models",
       "Implemented responsive designs following modern UI/UX principles"
-    ],
-    "link": "https://github.com/utkxrsh13/form-validation"
-  },
-  {
-    "job": "Web Developer",
-    "company": "RetoINDIA",
-    "date": "2024 - 2025",
-    "location": "India",
-    "status": "Completed",
-    "technologies": ["HTML", "CSS", "JavaScript", "Framer", "React"],
-    "responsibilities": [
-      "Built visually appealing, responsive eCommerce platform serving 1000+ daily users",
-      "Integrated payment gateways and implemented secure user authentication",
-      "Developed custom animations and interactive elements using Framer",
-      "Collaborated with design team to ensure pixel-perfect implementation",
-      "Reduced page load time by 35% through code optimization"
-    ],
-    "link": "https://reto-india.onrender.com/"
-  },
-  {
-    "job": "Frontend Developer",
-    "company": "Freelance Projects",
-    "date": "2022 - 2024",
-    "location": "Remote",
-    "status": "Multiple Projects",
-    "technologies": ["React", "JavaScript", "SCSS", "Bootstrap"],
-    "responsibilities": [
-      "Completed 2+ successful client projects ranging from portfolios to web applications",
-      "Specialized in converting designs to pixel-perfect, responsive websites",
-      "Implemented modern JavaScript frameworks and libraries",
-      "Maintained 98% client satisfaction rate with timely project delivery",
-      "Provided ongoing maintenance and support for deployed applications"
     ]
   },
   {
-    "job": "backend Developer",
-    "company": "Celebal Technologies",
-    "date": "2020 - Present",
-    "location": "Remote",
-    "status": "Current",
-    "technologies": ["React", "JavaScript", "Node.js", "Tailwind CSS"],
+    "job": "Blockchain Developer",
+    "company": "Burst Pay",
+    "date": "2020.11 - 2022.3",
+    "location": "remote HongKnog",
+    "status": "Completed",
+    "technologies": [ "TypeScript", "Next.js",  "React", "Solidity", "Rust"],
     "responsibilities": [
-      "Backend Developer with strong experience in designing, developing, and maintaining scalable server-side applications.",
-      "killed in building RESTful APIs, working with databases, and optimizing performance and security.",
-      "Comfortable collaborating with frontend teams and deploying production-ready systems",
-      "Passionate about clean code, system design, and continuous learning"
-    ],
-    "link": "https://github.com/utkxrsh13/form-validation"
+      "Cross-chain development (10 chains including Ethereum, Solana, and BSC)",
+      "LSD token design and implementation",
+      "Development of the NFT market 'Genesis",
+      "Development of a microservice-based API gateway",
+      "Redirection of existing Node framework applications to Express.js Decoration"
+    ]
+  },
+  {
+    "job": "Web Developer",
+    "company": "Dr Go",
+    "date": "2016.9 - 2020.8",
+    "location": "Remote, Hong Kong",
+    "status": "Multiple Projects",
+    "technologies": ["React", "Django", "Wordpress", "RESTful API"],
+    "responsibilities": [
+      "Full-stack development using Django/React",
+      "Responsive multilingual website construction using WordPress, WIX,Squarespace, Bootstrap/HTML/CSS",
+      "RESTful API design and implementation (XML/JSON)",
+      "Database design and optimization (MySQL, PostgreSQL)Dev Ops (CI/CD, Docker, Nginx implementation)"
+    ]
   }
  ]

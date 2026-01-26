@@ -21,7 +21,7 @@ const ExperienceTopLeft = () => {
             <FaCalendar />
           </motion.div>
           <h3 className="text-green font-bold uppercase text-2xl font-special tracking-wider">
-            Since 2022
+            Since 2017
           </h3>
         </div>
         
@@ -36,7 +36,7 @@ const ExperienceTopLeft = () => {
             whileHover={{ scale: 1.05 }}
             className="text-center"
           >
-            <ExperienceInfo number="3+" text="Years" />
+            <ExperienceInfo number="8+" text="Years" />
           </motion.div>
           
           <div className="flex flex-col items-center">
@@ -67,7 +67,7 @@ const ExperienceTopLeft = () => {
         </div>
         
         <p className="text-gray-300 leading-relaxed text-sm">
-          With <span className="text-green font-semibold">3+ years</span> of hands-on experience 
+          With <span className="text-green font-semibold">8+ years</span> of hands-on experience 
           in modern web development, I&apos;ve successfully delivered 
           <span className="text-cyan font-semibold"> 15+ projects</span> ranging from 
           dynamic single-page applications to complex e-commerce platforms.
