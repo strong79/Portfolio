@@ -36,7 +36,7 @@ const ExperienceTopLeft = () => {
             whileHover={{ scale: 1.05 }}
             className="text-center"
           >
-            <ExperienceInfo number="8+" text="Years" />
+            <ExperienceInfo number="9+" text="Years" />
           </motion.div>
           
           <div className="flex flex-col items-center">
