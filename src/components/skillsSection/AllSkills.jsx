@@ -23,14 +23,6 @@ const skills = [
     progress: 99
   },
   {
-    skill: "CSS",
-    icon: FaCss3Alt,
-    color: "text-blue-500",
-    bgColor: "from-blue-500/20 to-cyan-500/20",
-    proficiency: "Expert",
-    progress: 80
-  },
-  {
     skill: "JavaScript",
     icon: IoLogoJavascript,
     color: "text-yellow-400",
@@ -103,22 +95,6 @@ const skills = [
     progress: 90
   },
   {
-    skill: "Django",
-    icon: SiDjango,
-    color: "text-green-400",
-    bgColor: "from-green-400/20 to-green-600/20",
-    proficiency: "Expert",
-    progress: 87
-  },
-  {
-    skill: "FastAPI",
-    icon: SiFastAPI,
-    color: "text-green-400",
-    bgColor: "from-green-400/20 to-green-600/20",
-    proficiency: "Expert",
-    progress: 92
-  },
-  {
     skill: "Java",
     icon: FaJava,
     color: "text-red-500",
@@ -129,14 +105,6 @@ const skills = [
   {
     skill: "Rust",
     icon: SiRust,
-    color: "text-red-500",
-    bgColor: "from-red-500/20 to-orange-600/20",
-    proficiency: "Expert",
-    progress: 90
-  },
-  {
-    skill: "Solidity",
-    icon: SiSolidity,
     color: "text-red-500",
     bgColor: "from-red-500/20 to-orange-600/20",
     proficiency: "Expert",
