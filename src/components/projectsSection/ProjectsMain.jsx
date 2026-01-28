@@ -27,11 +27,11 @@ const ProjectsMain = () => {
           viewport={{ once: false, amount: 0.5 }}
         >
           <SingleProject
-            name="InspiraPix"
+            name="Hammer AI"
             year="Mar 2025"
             align="right"
-            image="/images/website-img-1.png"
-            link="https://inspirapix.vercel.app/"
+            image="/images/website-img-1.jpg"
+            link="https://www.hammerai.com"
           />
         </motion.div>
 

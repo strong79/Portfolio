@@ -7,8 +7,7 @@ import SingleInfo from "./SingleInfo";
 const ContactInfo = () => {
   const contactData = [
     { text: "orhueblessed241@gmail.com", Icon: HiOutlineMail },
-    { text: "---------", Icon: FiPhone },
-    { text: "Ibaraki, JP", Icon: IoLocationOutline }
+    { text: "Osaka, JP", Icon: IoLocationOutline }
   ];
 
   return (

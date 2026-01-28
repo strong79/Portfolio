@@ -5,18 +5,6 @@ import ContactInfo from "./ContactInfo";
 const ContactMeRight = () => {
   const socialLinks = [
     {
-      icon: FaGithub,
-      href: "https://github.com/utkxrsh13",
-      label: "GitHub",
-      color: "hover:text-gray-300"
-    },
-    {
-      icon: FaLinkedin,
-      href: "https://www.linkedin.com/in/utkxrsh13/",
-      label: "LinkedIn",
-      color: "hover:text-blue-400"
-    },
-    {
       icon: FaEnvelope,
       href: "orhueblessed241@gmail.com",
       label: "Email",
