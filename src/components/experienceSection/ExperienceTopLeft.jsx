@@ -85,7 +85,6 @@ const ExperienceTopLeft = () => {
         </div>
       </div>
 
-      {/* Bottom decoration */}
       <div className="flex justify-center">
         <div className="w-24 h-1 bg-gradient-to-r from-transparent via-green to-transparent rounded-full opacity-50"></div>
       </div>
