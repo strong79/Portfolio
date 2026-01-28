@@ -86,14 +86,7 @@ const skills = [
     proficiency: "Intermediate",
     progress: 72
   },
-  {
-    skill: "Python",
-    icon: Sipython,
-    color: "text-green-400",
-    bgColor: "from-green-400/20 to-green-600/20",
-    proficiency: "Expert",
-    progress: 90
-  },
+
   {
     skill: "Java",
     icon: FaJava,
