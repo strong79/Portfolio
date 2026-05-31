@@ -22,6 +22,9 @@ const SingleExperience = ({ experience, index }) => {
             <h3 className="text-xl font-bold text-green mb-1 group-hover:text-cyan transition-colors duration-300">
               {experience.job}
             </h3>
+            {experience.description && (
+              <p className="text-gray-300 text-sm mb-1">{experience.description}</p>
+            )}
             <p className="text-cyan text-lg font-semibold mb-2">{experience.company}</p>
           </div>
           

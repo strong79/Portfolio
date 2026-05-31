@@ -1,7 +1,6 @@
 import SingleExperience from "./SingleExperience";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import experiences from  "../../../json/experience.json";
 
 
@@ -72,30 +71,10 @@ const AllExperiences = () => {
         className="text-center mt-16 p-8 bg-gradient-to-r from-gray-900/50 to-black/30 backdrop-blur-sm rounded-2xl border border-green/20"
       >
         <h3 className="text-xl font-bold text-white mb-4">Let&apos;s Work Together</h3>
-        <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+        <p className="text-gray-300 max-w-2xl mx-auto">
           I&apos;m always interested in new opportunities and exciting projects. 
           Feel free to reach out if you&apos;d like to collaborate!
         </p>
-        <div className="flex justify-center gap-4">
-          <a 
-            href="https://github.com/utkxrsh13" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-green/10 hover:bg-green/20 text-green px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 border border-green/30"
-          >
-            <FaGithub />
-            <span>GitHub</span>
-          </a>
-          <a 
-            href="https://www.linkedin.com/in/utkxrsh13/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-cyan/10 hover:bg-cyan/20 text-cyan px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 border border-cyan/30"
-          >
-            <FaLinkedin />
-            <span>LinkedIn</span>
-          </a>
-        </div>
       </motion.div>
     </div>
   );

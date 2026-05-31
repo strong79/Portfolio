@@ -1,47 +1,76 @@
- [
- {
-    "job": "Full stack Developer",
-    "company": "Discord Hammer AI community",
-    "date": "2022.6 - 2025.7",
-    "location": "Remote, US",
-    "status": "Current",
-    "technologies": ["React", "Next.js", "Tailwind CSS", "AI"],
-    "responsibilities": [
-      "Developed and maintained 15+ reusable React components used across multiple projects",
-      "Collaborated with cross-functional teams to implement scalable web applications",
-      "Optimized application performance resulting in 40% faster load times",
-      "Mentored senior developers and conducted code reviews",
-      "Voice distinction and image generation with Powerful AI models",
-      "Implemented responsive designs following modern UI/UX principles"
-    ]
-  },
+[
   {
-    "job": "Blockchain Developer",
-    "company": "Burst Pay",
-    "date": "2020.11 - 2022.3",
-    "location": "remote HongKnog",
+    "job": "Full Stack Engineer",
+    "description": "企業向けマルチテナントSaaS分析プラットフォーム開発",
+    "company": "Takeyou Web Co., Ltd. (Japan)",
+    "date": "Feb 2025 – Apr 2026",
+    "location": "Japan",
     "status": "Completed",
-    "technologies": [ "TypeScript", "Next.js",  "React", "Solidity", "Rust"],
+    "technologies": ["Ruby on Rails", "PostgreSQL", "Redis", "Sidekiq", "Hotwire", "AWS", "Docker", "Kamal"],
     "responsibilities": [
-      "Cross-chain development (10 chains including Ethereum, Solana, and BSC)",
-      "LSD token design and implementation",
-      "Development of the NFT market 'Genesis",
-      "Development of a microservice-based API gateway",
-      "Redirection of existing Node framework applications to Express.js Decoration"
+      "マルチテナント対応SaaS分析基盤の設計・開発",
+      "tenant_idベースのアクセス制御機能を実装",
+      "分析ダッシュボードおよびレポート機能を開発",
+      "SQLチューニングにより分析処理性能を約35％改善",
+      "Sidekiqによる非同期バッチ処理を構築",
+      "AWS環境での運用保守およびCI/CDを担当",
+      "レガシーシステムのリファクタリングを実施"
     ]
   },
   {
-    "job": "Web Developer",
-    "company": "Dr Go",
-    "date": "2016.9 - 2020.8",
-    "location": "Remote, Hong Kong",
-    "status": "Multiple Projects",
-    "technologies": ["React", "Django", "Wordpress", "RESTful API"],
+    "job": "AI Agent Engineer / Lead Engineer",
+    "description": "Enterprise AI Voice Agent Platform",
+    "company": "AI Rudder Pte Ltd (Singapore)",
+    "date": "Apr 2022 – Nov 2024",
+    "location": "Singapore",
+    "status": "Completed",
+    "technologies": ["Python", "FastAPI", "Spring Boot", "OpenAI API", "RAG", "Next.js", "Vue.js", "AWS EKS", "Kubernetes"],
     "responsibilities": [
-      "Full-stack development using Django/React",
-      "Responsive multilingual website construction using WordPress, WIX,Squarespace, Bootstrap/HTML/CSS",
-      "RESTful API design and implementation (XML/JSON)",
-      "Database design and optimization (MySQL, PostgreSQL)Dev Ops (CI/CD, Docker, Nginx implementation)"
+      "Developed enterprise-grade AI voice agent solutions using OpenAI technologies",
+      "Implemented RAG-based knowledge retrieval and FAQ search systems",
+      "Built scalable AI backend services with FastAPI and Spring Boot",
+      "Integrated ASR (Speech Recognition) and TTS (Speech Synthesis) services",
+      "Developed administration dashboards using Next.js and Vue.js",
+      "Designed CRM and third-party system integrations",
+      "Managed microservices architecture on AWS EKS and Kubernetes",
+      "Improved performance through Redis caching and database optimization"
+    ]
+  },
+  {
+    "job": "Full Stack Engineer",
+    "description": "Artemis Weddings Event Management Platform",
+    "company": "Chillybin Web Design Pte Ltd (Singapore)",
+    "date": "Apr 2018 – Feb 2022",
+    "location": "Singapore",
+    "status": "Completed",
+    "technologies": ["Next.js", "Vue.js", "FastAPI", "PostgreSQL", "MySQL", "AWS", "Docker"],
+    "responsibilities": [
+      "Developed an event booking and customer management platform",
+      "Built customer-facing web applications using Next.js",
+      "Developed administration dashboards with Vue.js",
+      "Designed reservation and inquiry management APIs using FastAPI",
+      "Implemented responsive and mobile-first user interfaces",
+      "Improved SEO and website performance",
+      "Managed cloud deployment and operations on AWS",
+      "Collaborated closely with designers and stakeholders"
+    ]
+  },
+  {
+    "job": "Backend Engineer",
+    "description": "My Drum School Web Platform",
+    "company": "Chillybin Web Design Pte Ltd (Singapore)",
+    "date": "Oct 2016 – Mar 2018",
+    "location": "Singapore",
+    "status": "Completed",
+    "technologies": ["PHP", "WordPress", "MySQL", "JavaScript", "jQuery", "AWS"],
+    "responsibilities": [
+      "Developed and customized WordPress-based educational platforms",
+      "Built CMS features and content management workflows",
+      "Developed inquiry forms and lead-generation functionality",
+      "Improved SEO performance and website speed",
+      "Enhanced mobile experience through responsive design",
+      "Developed custom PHP/MySQL functionality",
+      "Supported deployment, maintenance, and operational improvements"
     ]
   }
- ]
+]
