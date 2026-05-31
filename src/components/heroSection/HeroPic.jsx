@@ -23,15 +23,15 @@ const HeroPic = () => {
     >
       {/* Main profile image with enhanced styling */}
       <div className="relative z-20">
-        <div className="relative overflow-hidden rounded-full border-4 border-green/30 hover:border-green/60 transition-all duration-500 group-hover:scale-105 w-[450px] h-[450px] max-w-[90vw] max-h-[90vw]">
+        <div className="relative overflow-hidden rounded-full border-4 border-green/30 hover:border-green/60 transition-all duration-500 group-hover:scale-105">
           <img
             src="/images/shirie.png"
             alt="Shirie Koichi - Full Stack & AI Engineer"
-            className="absolute inset-0 w-full h-full object-cover rounded-full border border-cyan/10 animate-pulse filter hover:brightness-110 transition-all duration-500"
+            className="max-h-[450px] w-auto filter hover:brightness-110 transition-all duration-500"
           />
 
           {/* Overlay gradient for modern effect */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-green/10 via-transparent to-cyan/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full"></div>
+          <div className="absolute inset-0 bg-gradient-to-tr from-green/10 via-transparent to-cyan/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </div>
 
         {/* Status indicator */}
@@ -91,20 +91,17 @@ const HeroPic = () => {
 
       {/* Orbital rings */}
       <div className="absolute inset-0 -z-5">
-        <img
-          src="/images/shirie.png"
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 rounded-full border border-cyan/10 animate-pulse object-cover opacity-20 pointer-events-none"
-          style={{
-            width: "400px",
-            height: "400px",
-            left: "50%",
-            top: "50%",
-            transform: "translate(-50%, -50%)",
-            animationDelay: "1s",
-          }}
-        />
+        <div className="absolute inset-0 rounded-full border border-green/20 animate-pulse" 
+          style={{ width: '300px', height: '300px', left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}></div>
+        <div className="absolute inset-0 rounded-full border border-cyan/10 animate-pulse" 
+          style={{ 
+            width: '400px', 
+            height: '400px', 
+            left: '50%', 
+            top: '50%', 
+            transform: 'translate(-50%, -50%)',
+            animationDelay: '1s'
+          }}></div>
       </div>
 
       {/* Code snippet floating around */}
