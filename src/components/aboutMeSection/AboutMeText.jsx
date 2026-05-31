@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 import TypewriterEffect from "../ui/TypewriterEffect";
 import name from "../../../json/name.json"
-import addAboutMe from "../../../json/addAboutMe.json"
 
 const AboutMeText = () => {
   const highlights = [
@@ -74,38 +73,87 @@ const AboutMeText = () => {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-cyan font-semibold">
             {name.lastname} {name.firstname}
           </span>
-          , a passionate{" "}
+          , a{" "}
           <span className="text-green font-semibold px-2 py-1 bg-green/10 rounded border border-green/20">
-            Frontend Developer
+            Full Stack Engineer
           </span>{" "}
-          with a strong focus on building interactive and responsive user interfaces using{" "}
-          <span className="text-cyan font-semibold">React.js</span>. 
-          I love crafting smooth, accessible, and pixel-perfect experiences on the web.
+          and{" "}
+          <span className="text-green font-semibold px-2 py-1 bg-green/10 rounded border border-green/20">
+            AI Engineer
+          </span>{" "}
+          with over{" "}
+          <span className="text-cyan font-semibold">9 years</span> of experience
+          building{" "}
+          <span className="text-cyan font-semibold">web applications</span>,{" "}
+          <span className="text-yellow font-semibold">SaaS platforms</span>, and{" "}
+          <span className="text-orange font-semibold">AI-powered systems</span>.
         </p>
 
         <p className="text-lg">
-          I&apos;m diving deeper into{" "}
+          My expertise spans{" "}
+          <span className="text-cyan font-semibold">frontend</span>,{" "}
+          <span className="text-cyan font-semibold">backend</span>, and{" "}
+          <span className="text-cyan font-semibold">cloud infrastructure</span>{" "}
+          development, allowing me to design and deliver complete solutions from
+          concept to production. I have worked on{" "}
           <span className="text-yellow font-semibold px-2 py-1 bg-yellow/10 rounded border border-yellow/20">
-            backend development
+            multi-tenant SaaS platforms
           </span>
-          , learning the full{" "}
-          <span className="text-orange font-semibold">FULL stack</span>{" "}
-          to become a well-rounded full-stack developer. I&apos;m constantly exploring technologies like{" "}
-          <span className="text-green font-mono text-sm">Node.js</span>,{" "}
-          <span className="text-cyan font-mono text-sm">Express</span>, and{" "}
-          <span className="text-green font-mono text-sm">MongoDB</span>{" "}
-          to complement my frontend skills.
-        </p>
-        <p className="text-lg">
-          {addAboutMe.blockchain}
+          ,{" "}
+          <span className="text-green font-semibold">
+            enterprise AI voice agent systems
+          </span>
+          ,{" "}
+          <span className="text-cyan font-semibold">educational web platforms</span>
+          , and{" "}
+          <span className="text-orange font-semibold">cloud-native applications</span>.
         </p>
 
         <p className="text-lg">
-          I&apos;m always excited about{" "}
-          <span className="text-cyan font-semibold">learning</span>,{" "}
-          <span className="text-green font-semibold">collaborating</span>, and{" "}
-          <span className="text-yellow font-semibold">building impactful web experiences</span>. 
-          Let&apos;s create something awesome together!
+          I have strong experience with modern technologies including{" "}
+          <span className="text-green font-mono text-sm">Python (FastAPI)</span>,{" "}
+          <span className="text-cyan font-mono text-sm">Ruby on Rails</span>,{" "}
+          <span className="text-green font-mono text-sm">Java (Spring Boot)</span>,{" "}
+          <span className="text-cyan font-mono text-sm">Next.js</span>,{" "}
+          <span className="text-green font-mono text-sm">Vue.js</span>,{" "}
+          <span className="text-cyan font-mono text-sm">AWS</span>,{" "}
+          <span className="text-green font-mono text-sm">Docker</span>, and{" "}
+          <span className="text-cyan font-mono text-sm">Kubernetes</span>. In recent
+          years, I have specialized in{" "}
+          <span className="text-yellow font-semibold px-2 py-1 bg-yellow/10 rounded border border-yellow/20">
+            Generative AI
+          </span>
+          , developing{" "}
+          <span className="text-green font-semibold">AI agents</span>,{" "}
+          <span className="text-cyan font-semibold">Conversational AI systems</span>
+          , and{" "}
+          <span className="text-orange font-semibold">RAG</span>{" "}
+          (Retrieval-Augmented Generation) solutions using{" "}
+          <span className="text-green font-mono text-sm">OpenAI APIs</span> and vector
+          search technologies.
+        </p>
+
+        <p className="text-lg">
+          I enjoy solving complex technical challenges, building{" "}
+          <span className="text-cyan font-semibold">scalable architectures</span>, and
+          continuously learning emerging technologies. Whether it&apos;s developing{" "}
+          <span className="text-green font-semibold">intelligent AI systems</span>,
+          designing{" "}
+          <span className="text-yellow font-semibold">robust backend services</span>, or
+          creating{" "}
+          <span className="text-orange font-semibold">seamless user experiences</span>, I
+          am passionate about building products that deliver real business value.
+        </p>
+
+        <p className="text-lg">
+          I&apos;m always excited to{" "}
+          <span className="text-cyan font-semibold">collaborate</span> with talented
+          teams, explore{" "}
+          <span className="text-green font-semibold">innovative ideas</span>, and create{" "}
+          <span className="text-yellow font-semibold">
+            impactful technology solutions
+          </span>
+          .
         </p>
       </motion.div>
 
