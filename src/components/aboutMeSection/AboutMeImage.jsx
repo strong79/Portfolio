@@ -26,7 +26,7 @@ const AboutMeImage = () => {
           <div className="relative w-full h-full">
             {/* Enhanced image with overlay effects */}
             <img
-              src="/images/shirie.png"
+              src="/images/about-me.png"
               alt="Shirie Koichi - About Me"
               className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 filter group-hover:brightness-110"
             />
