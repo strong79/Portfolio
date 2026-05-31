@@ -11,8 +11,8 @@ const LandingPage = ({ onEnter = () => {} }) => {
   const [bootSequence, setBootSequence] = useState(false);
 
   const terminalSequence = [
-    { command: "$ whoami", output: "utkarsh_dev", delay: 1000 },
-    { command: "$ pwd", output: "/home/utkarsh/portfolio", delay: 800 },
+    { command: "$ whoami", output: "shirie_koichi", delay: 1000 },
+    { command: "$ pwd", output: "/home/shirie/portfolio", delay: 800 },
     { command: "$ ls -la skills/", output: "javascript  react  node  python  docker", delay: 1200 },
     { command: "$ cat welcome.txt", output: "Welcome to my digital workspace", delay: 1000 },
     { command: "$ ./run_portfolio.sh", output: "Initializing portfolio...", delay: 800 }
@@ -170,7 +170,7 @@ const LandingPage = ({ onEnter = () => {} }) => {
               <div className="w-3 h-3 rounded-full bg-green-500"></div>
             </div>
             <div className="flex-1 text-center text-sm text-green-300">
-              utkarsh@portfolio:~$ 
+              shirie@portfolio:~$ 
             </div>
             <div className="text-xs text-green-600">
               {new Date().toLocaleTimeString()}

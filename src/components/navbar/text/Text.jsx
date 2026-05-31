@@ -1,7 +1,7 @@
 import "react";
 import "./text.css";
 
-const UtkarshPattern = () => {
+const ShiriePattern = () => {
   return (
     <div className="patterns">
       <svg width="100%" height="100%" viewBox="0 0 800 200">
@@ -25,13 +25,13 @@ const UtkarshPattern = () => {
         
         {/* Main text with enhanced styling */}
         <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" fontSize="32" fontWeight="700">
-          UTKARSH
+          SHIRIE KOICHI
         </text>
         
         {/* Subtitle/tagline */}
         <text x="50%" y="75%" textAnchor="middle" dominantBaseline="middle" fontSize="12" 
               fill="rgba(0, 255, 0, 0.6)" stroke="none" fontFamily="'JetBrains Mono', monospace">
-          &lt;/Frontend Developer&gt;
+          &lt;/Full Stack &amp; AI Engineer&gt;
         </text>
         
         {/* Decorative tech elements */}
@@ -64,4 +64,4 @@ const UtkarshPattern = () => {
   );
 };
 
-export default UtkarshPattern;
+export default ShiriePattern;

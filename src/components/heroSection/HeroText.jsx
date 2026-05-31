@@ -54,7 +54,9 @@ const HeroText = () => {
         
         {/* Glitch effect overlay */}
         <div className="absolute inset-0 text-green/20 animate-pulse blur-sm">
-          UTKARSH<br className="sm:hidden md:block" />TIWARI
+          {name.lastname.toUpperCase()}
+          <br className="sm:hidden md:block" />
+          {name.firstname.toUpperCase()}
         </div>
       </motion.h1>
 

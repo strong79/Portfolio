@@ -22,7 +22,7 @@ const NavbarLogo = () => {
       {/* Mobile Logo */}
       <div className="block md:hidden">
         <h1 className="text-3xl font-mono font-bold relative">
-          <span className="text-green">UT</span>
+          <span className="text-green">SK</span>
           <span className="absolute -top-1 -right-1 text-xs text-cyan opacity-60">01</span>
         </h1>
       </div>
