@@ -29,12 +29,11 @@ const HeroText = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="lg:text-2xl sm:text-xl uppercase text-white/80 font-light tracking-wider"
+        className="lg:text-2xl sm:text-xl text-white/80 font-light tracking-wider"
       >
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan to-green font-semibold">Frontend</span>{" "}
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan to-green font-semibold">full-stack</span>{" "}
         <span className="text-white/60">&amp;</span>{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-cyan font-semibold">Full-Stack</span>{" "}
-        Developer
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-cyan font-semibold">AI engineer</span>
       </motion.h2>
 
       <motion.h1

@@ -65,7 +65,7 @@ const SkillsText = () => {
           transition={{ duration: 0.8, delay: 1 }}
           className="flex flex-wrap justify-center gap-2 mt-6"
         >
-          {['Frontend', 'Backend', 'Full Stack', 'Modern Tools'].map((tag, index) => (
+          {['Frontend', 'Backend', 'Full Stack', 'AI engineer'].map((tag, index) => (
             <span
               key={tag}
               className="px-3 py-1 bg-gray-800/50 border border-green/20 rounded-full text-sm text-green font-mono"
