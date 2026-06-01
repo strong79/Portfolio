@@ -10,7 +10,6 @@ const ComingSoonProject = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6 }}
-      className="relative mt-32"
     >
       <TechCard className="p-8 text-center max-w-2xl mx-auto" hover={true} glow={true}>
         {/* Animated loader icon */}

@@ -40,11 +40,11 @@ const ProjectsText = () => {
       <div className="max-w-3xl text-center space-y-6">
         <p className="text-lg text-white/80 leading-relaxed">
           I&apos;ve worked on a variety of{" "}
-          <span className="text-cyan font-semibold">web development projects</span>, 
+          <span className="text-cyan font-semibold">web and AI development projects</span>, 
           ranging from responsive websites to{" "}
-          <span className="text-green font-semibold">full-stack applications</span>{" "}
-          and complex{" "}
-          <span className="text-yellow font-semibold">front-end interfaces</span>.
+          <span className="text-green font-semibold">full-stack applications</span>,{" "}
+          <span className="text-yellow font-semibold">SaaS platforms</span>, and{" "}
+          <span className="text-cyan font-semibold">AI-powered systems</span>.
         </p>
 
         {/* Typewriter effect for dynamic content */}

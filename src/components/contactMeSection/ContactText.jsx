@@ -1,5 +1,14 @@
 import { motion } from "framer-motion";
-import { FaCode, FaHandshake, FaRocket, FaLightbulb } from "react-icons/fa";
+import { FaHandshake } from "react-icons/fa";
+
+const services = [
+  "🚀 AI Agent Development",
+  "⚡ Full Stack Development",
+  "☁️ Cloud & AWS Architecture",
+  "🔗 API & System Integration",
+  "💡 SaaS Platform Development",
+  "📊 Data Analytics Solutions",
+];
 
 const ContactText = () => {
   return (
@@ -43,9 +52,12 @@ const ContactText = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <p className="text-gray-300 text-lg leading-relaxed mb-4">
-            Ready to turn your <span className="text-green font-semibold">ideas into reality</span>? 
-            I&apos;d love to hear about your project and discuss how we can work together 
-            to create something <span className="text-cyan font-semibold">extraordinary</span>.
+            Ready to build innovative{" "}
+            <span className="text-green font-semibold">web applications</span>,{" "}
+            <span className="text-cyan font-semibold">SaaS platforms</span>, and{" "}
+            <span className="text-green font-semibold">AI-powered solutions</span>?
+            I&apos;d be glad to discuss your project and explore how my experience can
+            contribute to your team&apos;s success.
           </p>
         </motion.div>
 
@@ -56,31 +68,22 @@ const ContactText = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="bg-gradient-to-r from-black/30 to-gray-900/30 rounded-xl p-6 border border-green/20 backdrop-blur-sm"
         >
-          <div className="flex items-center gap-2 mb-4">
-            <FaCode className="text-cyan text-lg" />
-            <span className="text-gray-300 font-semibold">What I can help with:</span>
-          </div>
+          <span className="text-gray-300 font-semibold block mb-4">What I Can Help With</span>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {[
-              { icon: FaRocket, text: "React Development", color: "text-green" },
-              { icon: FaLightbulb, text: "Web Applications", color: "text-cyan" },
-              { icon: FaCode, text: "UI/UX Implementation", color: "text-green" },
-              { icon: FaRocket, text: "Performance Optimization", color: "text-cyan" }
-            ].map((service, index) => (
+            {services.map((service, index) => (
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.05, x: 5 }}
                 className="flex items-center gap-3 p-2 rounded-lg hover:bg-black/20 transition-all duration-300"
               >
-                <service.icon className={`${service.color} text-sm`} />
-                <span className="text-gray-300 text-sm">{service.text}</span>
+                <span className="text-gray-300 text-sm">{service}</span>
               </motion.div>
             ))}
           </div>
         </motion.div>
 
-        {/* Call to action */}
+        {/* Quick response */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -88,9 +91,11 @@ const ContactText = () => {
           className="bg-green/5 border border-green/20 rounded-lg p-4"
         >
           <p className="text-gray-300 text-sm leading-relaxed">
-            <span className="text-green font-semibold">✨ Quick response guaranteed!</span> 
+            <span className="text-green font-semibold block mb-1">Quick Response</span>
+            <span className="text-green font-semibold">✨ Quick response guaranteed!</span>
             <br />
-            I typically reply within 24 hours. Let&apos;s discuss your next big project!
+            I typically reply within 24 hours. Feel free to reach out regarding AI, SaaS,
+            Web, or Cloud development opportunities.
           </p>
         </motion.div>
       </div>
@@ -98,9 +103,6 @@ const ContactText = () => {
       {/* Floating decorative elements */}
       <div className="absolute -top-4 -right-4 text-green/10 font-mono text-xs pointer-events-none">
         &lt;/contact&gt;
-      </div>
-      <div className="absolute -bottom-2 -left-2 text-cyan/10 font-mono text-xs pointer-events-none">
-        &lt;form&gt;
       </div>
     </motion.div>
   );

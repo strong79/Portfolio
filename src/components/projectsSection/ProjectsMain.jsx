@@ -1,6 +1,5 @@
 import ProjectsText from "./ProjectsText";
 import SingleProject from "./SingleProject";
-import ComingSoonProject from "./ComingSoonProject";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
@@ -27,11 +26,11 @@ const ProjectsMain = () => {
           viewport={{ once: false, amount: 0.5 }}
         >
           <SingleProject
-            name="Hammer AI"
-            year="Mar 2025"
+            name="企業向けマルチテナントSaaS分析プラットフォーム開発"
+            year="2025年2月 ～ 2026年4月"
             align="right"
             image="/images/website-img-1.jpg"
-            link="https://www.hammerai.com"
+            link="https://bullettrain.co/"
           />
         </motion.div>
 
@@ -42,11 +41,11 @@ const ProjectsMain = () => {
           viewport={{ once: false, amount: 0.5 }}
         >
           <SingleProject
-            name="GoHop"
-            year="Jan 2025"
+            name="Enterprise AI Voice Agent Platform"
+            year="Apr 2022 – Nov 2024"
             align="left"
-            image="/images/website-img-3.jpg"
-            link="https://github.com/utkxrsh13/GOHOP-mobile"
+            image="/images/website-img-2.jpg"
+            link="https://airudder.com/products/voice-ai/"
           />
         </motion.div>
 
@@ -57,11 +56,11 @@ const ProjectsMain = () => {
           viewport={{ once: false, amount: 0.5 }}
         >
           <SingleProject
-            name="CareerVista"
-            year="Sept 2024"
+            name="Artemis Weddings Event Management Platform"
+            year="Apr 2018 – Feb 2022"
             align="right"
-            image="/images/website-img-2.webp"
-            link="https://career-vista.onrender.com/"
+            image="/images/website-img-3.jpg"
+            link="https://www.artemisweddings.com.sg/"
           />
         </motion.div>
 
@@ -72,24 +71,14 @@ const ProjectsMain = () => {
           viewport={{ once: false, amount: 0.5 }}
         >
           <SingleProject
-            name="TruBot"
-            year="Aug 2024"
+            name="My Drum School Web Platform"
+            year="Oct 2016 – Mar 2018"
             align="left"
             image="/images/website-img-4.jpg"
-            link="https://tr-ubot.vercel.app/"
+            link="https://mydrumschool.com/"
           />
         </motion.div>
       </div>
-
-      <motion.div
-        variants={fadeIn("up", 0.15)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.5 }}
-        className="mt-20"
-      >
-        <ComingSoonProject />
-      </motion.div>
     </div>
   );
 };

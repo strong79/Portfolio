@@ -45,7 +45,8 @@ const FooterMain = () => {
               </h3>
             </div>
             <p className="text-white/60 font-mono text-sm max-w-md">
-              Frontend Developer crafting modern web experiences with cutting-edge technologies
+              Full Stack &amp; AI Engineer building scalable SaaS platforms, intelligent AI
+              solutions, and cloud-native applications
             </p>
             
             {/* Tech icons */}
@@ -90,6 +91,11 @@ const FooterMain = () => {
             </h3>
           </div>
           
+          <p className="text-white/60 font-mono text-sm max-w-md">
+            Full Stack &amp; AI Engineer building scalable SaaS platforms, intelligent AI
+            solutions, and cloud-native applications
+          </p>
+
           <div className="flex gap-6 text-white/70">
             {footerLinks.map((item, index) => (
               <Link

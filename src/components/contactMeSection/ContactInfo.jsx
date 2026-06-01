@@ -1,13 +1,16 @@
 import { HiOutlineMail } from "react-icons/hi";
-import { FiPhone } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 import SingleInfo from "./SingleInfo";
 
 const ContactInfo = () => {
   const contactData = [
-    { text: "orhueblessed241@gmail.com", Icon: HiOutlineMail },
-    { text: "Osaka, JP", Icon: IoLocationOutline }
+    {
+      text: "shiriekoichi99@gmail.com",
+      Icon: HiOutlineMail,
+      href: "mailto:shiriekoichi99@gmail.com",
+    },
+    { text: "Akita, JP", Icon: IoLocationOutline },
   ];
 
   return (
@@ -30,7 +33,7 @@ const ContactInfo = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
           >
-            <SingleInfo text={item.text} Image={item.Icon} />
+            <SingleInfo text={item.text} Image={item.Icon} href={item.href} />
           </motion.div>
         ))}
       </div>

@@ -53,7 +53,7 @@ const SingleProject = ({ name, year, align, image, link }) => {
               hover:scale-105 group-hover:translate-x-2`}
           >
             {isGithubLink ? <FaGithub /> : <FaExternalLinkAlt />}
-            {isGithubLink ? 'View Code' : 'Live Demo'}
+            {isGithubLink ? 'View Code' : 'Live Site'}
             <BsFillArrowUpRightCircleFill className="transition-transform duration-300 group-hover:rotate-45" />
           </a>
 

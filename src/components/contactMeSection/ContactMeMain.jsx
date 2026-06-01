@@ -74,10 +74,11 @@ const ContactMeMain = () => {
           {/* Subtitle */}
           <div className="flex items-center justify-center gap-2 mb-4">
             <span className="text-green font-mono text-sm">{'// Let\'s Connect'}</span>
+            <span className="text-gray-500 font-mono text-sm">&lt;ready-to-collaborate/&gt;</span>
           </div>
           
           <TypewriterEffect
-            text="Ready to bring your ideas to life? Let's discuss your next project!"
+            text="Ready to build innovative web applications, SaaS platforms, and AI-powered solutions?"
             delay={100}
             className="text-lg text-gray-300 max-w-2xl mx-auto"
           />
@@ -100,7 +101,7 @@ const ContactMeMain = () => {
               &lt;contact&gt;
             </div>
             <div className="absolute top-4 right-4 text-cyan/20 font-mono text-xs pointer-events-none">
-              {'{ form }'}
+              {'{ contact }'}
             </div>
             <div className="absolute bottom-4 right-4 text-green/20 font-mono text-xs pointer-events-none">
               &lt;/contact&gt;
