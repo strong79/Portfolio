@@ -1,42 +1,29 @@
 import { Link } from "react-scroll";
 import { FaCode, FaLaptopCode, FaRocket } from "react-icons/fa";
 import { BsTerminal } from "react-icons/bs";
-import name from "../../../json/name.json"
+import name from "../../../json/name.json";
+import { useTranslation } from "../../i18n/useTranslation";
 
 const FooterMain = () => {
+  const { t } = useTranslation();
+
   const footerLinks = [
-    {
-      name: "About Me",
-      section: "about",
-    },
-    {
-      name: "Skills",
-      section: "skills",
-    },
-    {
-      name: "Experience",
-      section: "experience",
-    },
-    {
-      name: "Projects",
-      section: "projects",
-    },
+    { name: t.navbar.about, section: "about" },
+    { name: t.navbar.skills, section: "skills" },
+    { name: t.navbar.experience, section: "experience" },
+    { name: t.navbar.projects, section: "projects" },
   ];
 
   const currentYear = new Date().getFullYear();
 
   return (
     <div className="relative px-4 mb-8 mt-24">
-      {/* Animated separator */}
       <div className="relative w-full h-[1px] bg-gradient-to-r from-transparent via-green to-transparent mb-12">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan to-transparent animate-pulse"></div>
       </div>
 
-      {/* Main footer content */}
       <div className="max-w-[1200px] mx-auto">
-        {/* Desktop Layout */}
         <div className="md:flex justify-between items-start sm:hidden">
-          {/* Brand section */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <BsTerminal className="text-green text-2xl" />
@@ -45,11 +32,9 @@ const FooterMain = () => {
               </h3>
             </div>
             <p className="text-white/60 font-mono text-sm max-w-md">
-              Full Stack &amp; AI Engineer building scalable SaaS platforms, intelligent AI
-              solutions, and cloud-native applications
+              {t.footer.tagline}
             </p>
             
-            {/* Tech icons */}
             <div className="flex gap-4 mt-2">
               <FaCode className="text-green/60 hover:text-green transition-colors duration-300 cursor-pointer" />
               <FaLaptopCode className="text-cyan/60 hover:text-cyan transition-colors duration-300 cursor-pointer" />
@@ -57,10 +42,9 @@ const FooterMain = () => {
             </div>
           </div>
 
-          {/* Navigation links */}
           <div className="flex flex-col gap-4">
             <h4 className="text-white/80 font-semibold uppercase tracking-wider text-sm">
-              Quick Navigation
+              {t.footer.quickNav}
             </h4>
             <ul className="flex flex-col gap-3 text-white/70">
               {footerLinks.map((item, index) => (
@@ -82,7 +66,6 @@ const FooterMain = () => {
           </div>
         </div>
 
-        {/* Mobile responsive content */}
         <div className="md:hidden sm:flex flex-col items-center gap-6 text-center">
           <div className="flex items-center gap-3">
             <BsTerminal className="text-green text-xl" />
@@ -92,8 +75,7 @@ const FooterMain = () => {
           </div>
           
           <p className="text-white/60 font-mono text-sm max-w-md">
-            Full Stack &amp; AI Engineer building scalable SaaS platforms, intelligent AI
-            solutions, and cloud-native applications
+            {t.footer.tagline}
           </p>
 
           <div className="flex gap-6 text-white/70">
@@ -113,20 +95,18 @@ const FooterMain = () => {
           </div>
         </div>
 
-        {/* Bottom section */}
         <div className="flex md:flex-row sm:flex-col items-center justify-between mt-12 pt-8 border-t border-green/20 gap-4">
           <p className="text-white/40 font-mono text-xs">
             <span className="text-green">console.log(</span>
-            &quot;Built with ❤️ and lots of ☕&quot;
+            &quot;{t.footer.builtWithMessage}&quot;
             <span className="text-green">);</span>
           </p>
           
           <p className="text-white/40 text-xs font-mono">
-            © {currentYear} {name.lastname} {name.firstname} | All Rights Reserved
+            © {currentYear} {name.lastname} {name.firstname} | {t.footer.rights}
           </p>
         </div>
 
-        {/* Decorative tech elements */}
         <div className="absolute top-4 left-4 text-green/20 text-xs font-mono">
           &lt;/footer&gt;
         </div>
@@ -135,7 +115,6 @@ const FooterMain = () => {
         </div>
       </div>
 
-      {/* Background tech pattern */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5">
         <div className="absolute bottom-10 left-10 text-6xl text-green animate-pulse">
           {'{}'}

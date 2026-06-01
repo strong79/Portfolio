@@ -1,7 +1,10 @@
 import { Link } from "react-scroll";
 import { HiArrowDown } from "react-icons/hi";
+import { useTranslation } from "../../i18n/useTranslation";
 
 const NavbarBtn = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative group">
       <button 
@@ -11,16 +14,14 @@ const NavbarBtn = () => {
       >
         <Link spy={true} smooth={true} duration={500} offset={-120} to="contact" className="relative z-10">
           <div className="flex items-center gap-2">
-            <span>Let&apos;s Talk</span>
+            <span>{t.navbar.letsTalk}</span>
             <HiArrowDown className="text-sm group-hover:translate-y-1 transition-transform duration-300" />
           </div>
         </Link>
         
-        {/* Animated background overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-cyan to-green opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </button>
       
-      {/* Glow effect */}
       <div className="absolute -inset-1 bg-gradient-to-r from-green to-cyan rounded-xl opacity-20 group-hover:opacity-40 blur transition-opacity duration-300 -z-10"></div>
     </div>
   );

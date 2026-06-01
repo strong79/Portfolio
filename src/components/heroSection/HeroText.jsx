@@ -1,19 +1,14 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 import TypewriterEffect from "../ui/TypewriterEffect";
-import name from "../../../json/name.json"
+import name from "../../../json/name.json";
+import { useTranslation } from "../../i18n/useTranslation";
 
 const HeroText = () => {
-  const typewriterTexts = [
-    "Building amazing web experiences...",
-    "Crafting modern user interfaces...",
-    "Developing full-stack solutions...",
-    "Creating AI-powered applications..."
-  ];
+  const { t } = useTranslation();
 
   return (
     <div className="flex flex-col gap-6 h-full justify-center md:text-left sm:text-center relative">
-      {/* Code-like prefix */}
       <motion.div
         variants={fadeIn("down", 0.1)}
         initial="hidden"
@@ -31,9 +26,9 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="lg:text-2xl sm:text-xl text-white/80 font-light tracking-wider"
       >
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan to-green font-semibold">full-stack</span>{" "}
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan to-green font-semibold">{t.hero.roleFullStack}</span>{" "}
         <span className="text-white/60">&amp;</span>{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-cyan font-semibold">AI engineer</span>
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-cyan font-semibold">{t.hero.roleAiEngineer}</span>
       </motion.h2>
 
       <motion.h1
@@ -51,7 +46,6 @@ const HeroText = () => {
           {name.firstname}
         </span>
         
-        {/* Glitch effect overlay */}
         <div className="absolute inset-0 text-green/20 animate-pulse blur-sm">
           {name.lastname.toUpperCase()}
           <br className="sm:hidden md:block" />
@@ -67,20 +61,19 @@ const HeroText = () => {
         className="space-y-4"
       >
         <p className="text-lg text-white/80 leading-relaxed">
-          Passionate and skilled{" "}
+          {t.hero.intro.beforeFullStack}{" "}
           <span className="text-yellow font-semibold px-2 py-1 bg-yellow/10 rounded border border-yellow/20">
-            FULL stack
+            {t.hero.intro.fullStack}
           </span>{" "}
-          developer with experience in building{" "}
-          <span className="text-cyan font-semibold">full-stack applications</span>{" "}
-          and{" "}
+          {t.hero.intro.middle}{" "}
+          <span className="text-cyan font-semibold">{t.hero.intro.fullStackApps}</span>{" "}
+          {t.hero.intro.and}{" "}
           <span className="text-orange font-semibold px-2 py-1 bg-orange/10 rounded border border-orange/20">
-            AI-powered
+            {t.hero.intro.aiPowered}
           </span>{" "}
-          tools.
+          {t.hero.intro.after}
         </p>
 
-        {/* Tech stack tags */}
         <div className="flex flex-wrap gap-2 mt-6">
           {['React', 'Node.js', 'MongoDB', 'Express', 'Framer', 'GitHub'].map((tech, index) => (
             <span
@@ -94,7 +87,6 @@ const HeroText = () => {
         </div>
       </motion.div>
 
-      {/* Enhanced typing indicator with typewriter effect */}
       <motion.div
         variants={fadeIn("up", 0.8)}
         initial="hidden"
@@ -104,7 +96,7 @@ const HeroText = () => {
       >
         <span className="text-green">$</span>
         <TypewriterEffect 
-          texts={typewriterTexts}
+          texts={t.hero.typewriter}
           speed={80}
           deleteSpeed={40}
           delayBetween={2000}

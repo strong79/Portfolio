@@ -1,0 +1,76 @@
+[
+  {
+    "job": "フルスタックエンジニア",
+    "description": "企業向けマルチテナントSaaS分析プラットフォーム開発",
+    "company": "Takeyou Web Co., Ltd. (日本)",
+    "date": "2025年2月 ～ 2026年4月",
+    "location": "日本",
+    "status": "Completed",
+    "technologies": ["Ruby on Rails", "PostgreSQL", "Redis", "Sidekiq", "Hotwire", "AWS", "Docker", "Kamal"],
+    "responsibilities": [
+      "マルチテナント対応SaaS分析基盤の設計・開発",
+      "tenant_idベースのアクセス制御機能を実装",
+      "分析ダッシュボードおよびレポート機能を開発",
+      "SQLチューニングにより分析処理性能を約35％改善",
+      "Sidekiqによる非同期バッチ処理を構築",
+      "AWS環境での運用保守およびCI/CDを担当",
+      "レガシーシステムのリファクタリングを実施"
+    ]
+  },
+  {
+    "job": "AIエージェントエンジニア / リードエンジニア",
+    "description": "エンタープライズAI音声エージェントプラットフォーム",
+    "company": "AI Rudder Pte Ltd (シンガポール)",
+    "date": "2022年4月 ～ 2024年11月",
+    "location": "シンガポール",
+    "status": "Completed",
+    "technologies": ["Python", "FastAPI", "Spring Boot", "OpenAI API", "RAG", "Next.js", "Vue.js", "AWS EKS", "Kubernetes"],
+    "responsibilities": [
+      "OpenAI技術を用いたエンタープライズ向けAI音声エージェントソリューションを開発",
+      "RAGベースのナレッジ検索およびFAQ検索システムを実装",
+      "FastAPIとSpring BootによるスケーラブルなAIバックエンドサービスを構築",
+      "ASR（音声認識）およびTTS（音声合成）サービスを統合",
+      "Next.jsとVue.jsを用いた管理ダッシュボードを開発",
+      "CRMおよびサードパーティシステム連携を設計",
+      "AWS EKSおよびKubernetes上のマイクロサービスアーキテクチャを管理",
+      "Redisキャッシュおよびデータベース最適化によりパフォーマンスを改善"
+    ]
+  },
+  {
+    "job": "フルスタックエンジニア",
+    "description": "Artemis Weddings イベント管理プラットフォーム",
+    "company": "Chillybin Web Design Pte Ltd (シンガポール)",
+    "date": "2018年4月 ～ 2022年2月",
+    "location": "シンガポール",
+    "status": "Completed",
+    "technologies": ["Next.js", "Vue.js", "FastAPI", "PostgreSQL", "MySQL", "AWS", "Docker"],
+    "responsibilities": [
+      "イベント予約・顧客管理プラットフォームを開発",
+      "Next.jsを用いた顧客向けWebアプリケーションを構築",
+      "Vue.jsによる管理ダッシュボードを開発",
+      "FastAPIを用いた予約・問い合わせ管理APIを設計",
+      "レスポンシブおよびモバイルファーストUIを実装",
+      "SEOおよびWebサイトパフォーマンスを改善",
+      "AWS上のクラウドデプロイおよび運用を管理",
+      "デザイナーおよびステークホルダーと密接に協業"
+    ]
+  },
+  {
+    "job": "バックエンドエンジニア",
+    "description": "My Drum School Webプラットフォーム",
+    "company": "Chillybin Web Design Pte Ltd (シンガポール)",
+    "date": "2016年10月 ～ 2018年3月",
+    "location": "シンガポール",
+    "status": "Completed",
+    "technologies": ["PHP", "WordPress", "MySQL", "JavaScript", "jQuery", "AWS"],
+    "responsibilities": [
+      "WordPressベースの教育プラットフォームを開発・カスタマイズ",
+      "CMS機能およびコンテンツ管理ワークフローを構築",
+      "問い合わせフォームおよびリード獲得機能を開発",
+      "SEOパフォーマンスおよびWebサイト速度を改善",
+      "レスポンシブデザインによるモバイル体験を向上",
+      "カスタムPHP/MySQL機能を開発",
+      "デプロイ、保守、運用改善をサポート"
+    ]
+  }
+]

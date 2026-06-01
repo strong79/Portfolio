@@ -1,16 +1,12 @@
 import TypewriterEffect from "../ui/TypewriterEffect";
+import { useTranslation } from "../../i18n/useTranslation";
+import { SectionHeading } from "../ui/SectionHeading";
 
 const ProjectsText = () => {
-  const projectDescriptions = [
-    "Building innovative web solutions...",
-    "Crafting responsive user interfaces...", 
-    "Developing full-stack applications...",
-    "Creating seamless user experiences..."
-  ];
+  const { t } = useTranslation();
 
   return (
     <div className="flex flex-col items-center mt-[100px] relative">
-      {/* Background tech elements */}
       <div className="absolute -top-10 left-10 text-green/20 font-mono text-xs">
         &lt;projects&gt;
       </div>
@@ -18,40 +14,27 @@ const ProjectsText = () => {
         portfolio.showcase()
       </div>
 
-      {/* Section number indicator */}
       <div className="flex items-center gap-4 mb-6">
         <span className="text-green font-mono text-sm">03.</span>
         <div className="w-16 h-[1px] bg-gradient-to-r from-green to-transparent"></div>
       </div>
 
-      {/* Main heading with modern styling */}
-      <h2 className="text-6xl md:text-7xl font-bold mb-8 relative">
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan via-green to-cyan bg-[length:200%_auto] animate-gradient-shift">
-          Projects
-        </span>
-        
-        {/* Glitch effect overlay */}
-        <div className="absolute inset-0 text-green/20 blur-sm animate-pulse">
-          Projects
-        </div>
-      </h2>
+      <SectionHeading>{t.projects.title}</SectionHeading>
 
-      {/* Enhanced description */}
       <div className="max-w-3xl text-center space-y-6">
         <p className="text-lg text-white/80 leading-relaxed">
-          I&apos;ve worked on a variety of{" "}
-          <span className="text-cyan font-semibold">web and AI development projects</span>, 
-          ranging from responsive websites to{" "}
-          <span className="text-green font-semibold">full-stack applications</span>,{" "}
-          <span className="text-yellow font-semibold">SaaS platforms</span>, and{" "}
-          <span className="text-cyan font-semibold">AI-powered systems</span>.
+          {t.projects.intro.before}{" "}
+          <span className="text-cyan font-semibold">{t.projects.intro.webAi}</span>,{" "}
+          {t.projects.intro.ranging}{" "}
+          <span className="text-green font-semibold">{t.projects.intro.fullStack}</span>,{" "}
+          <span className="text-yellow font-semibold">{t.projects.intro.saas}</span>, {t.about.p2.and}{" "}
+          <span className="text-cyan font-semibold">{t.projects.intro.aiSystems}</span>.
         </p>
 
-        {/* Typewriter effect for dynamic content */}
         <div className="flex items-center justify-center gap-2 text-green/80 font-mono text-sm">
           <span className="text-green">$</span>
           <TypewriterEffect 
-            texts={projectDescriptions}
+            texts={t.projects.typewriter}
             speed={60}
             deleteSpeed={30}
             delayBetween={2500}
@@ -60,7 +43,6 @@ const ProjectsText = () => {
           />
         </div>
 
-        {/* Tech stack tags */}
         <div className="flex flex-wrap justify-center gap-2 mt-8">
           {['React', 'Node.js', 'Next.js', 'MongoDB', 'TypeScript', 'AI'].map((tech, index) => (
             <span
@@ -74,7 +56,6 @@ const ProjectsText = () => {
         </div>
       </div>
 
-      {/* Decorative elements */}
       <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 w-32 h-[1px] bg-gradient-to-r from-transparent via-cyan to-transparent"></div>
     </div>
   );

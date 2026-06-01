@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 import TechCard from "../ui/TechCard";
 import PropTypes from 'prop-types';
+import { useTranslation } from "../../i18n/useTranslation";
 
 const SingleProject = ({ name, year, align, image, link }) => {
+  const { t } = useTranslation();
   const isGithubLink = link.includes('github.com');
   
   return (
@@ -53,7 +55,7 @@ const SingleProject = ({ name, year, align, image, link }) => {
               hover:scale-105 group-hover:translate-x-2`}
           >
             {isGithubLink ? <FaGithub /> : <FaExternalLinkAlt />}
-            {isGithubLink ? 'View Code' : 'Live Site'}
+            {isGithubLink ? t.projects.viewCode : t.projects.liveSite}
             <BsFillArrowUpRightCircleFill className="transition-transform duration-300 group-hover:rotate-45" />
           </a>
 
@@ -102,7 +104,7 @@ const SingleProject = ({ name, year, align, image, link }) => {
             {/* Project status indicator */}
             <div className="absolute top-4 right-4 flex items-center gap-2 bg-black/70 backdrop-blur-sm rounded-lg px-3 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div className="w-2 h-2 bg-green rounded-full animate-pulse"></div>
-              <span className="text-green text-xs font-mono">ACTIVE</span>
+              <span className="text-green text-xs font-mono">{t.projects.active}</span>
             </div>
           </div>
         </TechCard>

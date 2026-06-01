@@ -1,26 +1,26 @@
 import { useDispatch } from "react-redux";
 import { closeMenu } from "../../state/menuSlice";
-
-const links = [
-  { link: "Home", section: "hero" },
-  { link: "About Me", section: "about" },
-  { link: "Skills", section: "skills" },
-  { link: "Experience", section: "experience" },
-  { link: "Projects", section: "projects" },
-  { link: "Contact", section: "contact" },
-];
+import { useTranslation } from "../../i18n/useTranslation";
 
 const NavbarLinks = () => {
   const dispatch = useDispatch();
+  const { t } = useTranslation();
+
+  const links = [
+    { link: t.navbar.home, section: "hero" },
+    { link: t.navbar.about, section: "about" },
+    { link: t.navbar.skills, section: "skills" },
+    { link: t.navbar.experience, section: "experience" },
+    { link: t.navbar.projects, section: "projects" },
+    { link: t.navbar.contact, section: "contact" },
+  ];
 
   const handleLinkClick = (section, e) => {
     e.preventDefault();
     
-    // Check if element exists
     const element = document.getElementById(section);
     
     if (element) {
-      // Manual smooth scroll
       const headerHeight = 80;
       const elementPosition = element.offsetTop - headerHeight;
       
@@ -30,7 +30,6 @@ const NavbarLinks = () => {
       });
     }
     
-    // Close mobile menu when a link is clicked
     dispatch(closeMenu());
   };
 
@@ -48,10 +47,8 @@ const NavbarLinks = () => {
                 {link.link}
               </button>
               
-              {/* Underline effect */}
               <div className="absolute bottom-1 lg:bottom-0 left-0 w-0 h-[2px] bg-gradient-to-r from-green to-cyan group-hover:w-full transition-all duration-300 ease-out"></div>
               
-              {/* Glow effect on hover - contained within bounds */}
               <div className="absolute inset-0 rounded-md bg-green/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 transform-gpu"></div>
             </li>
           );

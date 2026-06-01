@@ -1,22 +1,11 @@
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
-
-const FOCUS_AREAS = [
-  "AI Agents & LLM Applications",
-  "Multi-Tenant SaaS Systems",
-  "Microservices Architecture",
-  "Cloud & DevOps Engineering",
-];
-
-const KEY_ACHIEVEMENTS = [
-  "Built Enterprise AI Voice Agent Platform using OpenAI API and RAG",
-  "Developed Multi-Tenant SaaS Analytics Platform with Ruby on Rails",
-  "Designed Microservices Architecture on AWS EKS & Kubernetes",
-  "Improved Database Performance through SQL Optimization",
-  "Delivered End-to-End Full Stack Solutions from Design to Production",
-];
+import { useTranslation } from "../../i18n/useTranslation";
 
 const ExperienceTopRight = () => {
+  const { t } = useTranslation();
+  const top = t.experience.topRight;
+
   return (
     <motion.div
       initial={{ opacity: 0, x: 50 }}
@@ -25,29 +14,23 @@ const ExperienceTopRight = () => {
       className="lg:flex-1 lg:max-w-[520px] sm:w-full bg-gradient-to-br from-gray-900/50 to-black/30 backdrop-blur-sm border border-green/20 p-6 rounded-2xl hover:border-green/40 transition-all duration-500 hover:shadow-xl hover:shadow-green/10"
     >
       <div className="text-center mb-6">
-        <h3 className="text-xl font-bold text-white mb-2">Technical Expertise</h3>
-        <p className="text-sm text-cyan font-mono mb-3">
-          AI Engineering • Full Stack Development • Cloud Architecture
-        </p>
+        <h3 className="text-xl font-bold text-white mb-2">{top.title}</h3>
+        <p className="text-sm text-cyan font-mono mb-3">{top.subtitle}</p>
         <div className="w-16 h-1 bg-gradient-to-r from-green to-cyan mx-auto rounded-full"></div>
       </div>
 
       <p className="text-gray-300 leading-relaxed text-center text-sm mb-6">
-        Specialized in designing and developing enterprise-grade applications
-        using{" "}
-        <span className="text-green font-semibold">
-          Python, Ruby on Rails, FastAPI, Next.js, AWS, Docker, and Kubernetes
-        </span>
-        . Experienced in Generative AI, RAG systems, AI Voice Agents, and
-        scalable SaaS platform development.
+        {top.description.before}{" "}
+        <span className="text-green font-semibold">{top.description.tech}</span>
+        {top.description.after}
       </p>
 
       <div className="bg-black/20 rounded-lg p-4 border border-green/10 mb-6">
         <p className="text-sm text-gray-400 mb-3 text-center uppercase tracking-wider">
-          Focus Areas
+          {top.focusAreas}
         </p>
         <ul className="space-y-2">
-          {FOCUS_AREAS.map((area) => (
+          {top.focusList.map((area) => (
             <li
               key={area}
               className="flex items-start gap-2 text-sm text-gray-300"
@@ -61,10 +44,10 @@ const ExperienceTopRight = () => {
 
       <div>
         <p className="text-sm text-gray-400 mb-3 text-center uppercase tracking-wider">
-          Key Achievements
+          {top.achievementsTitle}
         </p>
         <ul className="space-y-2">
-          {KEY_ACHIEVEMENTS.map((achievement, index) => (
+          {top.achievements.map((achievement, index) => (
             <motion.li
               key={achievement}
               initial={{ opacity: 0, x: 10 }}

@@ -38,8 +38,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ["Josefin Sans", "sans-serif"],
-        special: ["Nunito", "sans-serif"],
+        body: ["Josefin Sans", "Noto Sans JP", "sans-serif"],
+        special: ["Nunito", "Noto Sans JP", "sans-serif"],
         mono: ["JetBrains Mono", "Courier New", "monospace"],
       },
       boxShadow: {
@@ -80,8 +80,8 @@ export default {
           '50%': { boxShadow: '0 0 20px rgba(0, 255, 0, 0.4), 0 0 30px rgba(0, 255, 0, 0.2)' },
         },
         'gradient-shift': {
-          '0%, 100%': { backgroundPosition: '0% 50%' },
-          '50%': { backgroundPosition: '100% 50%' },
+          '0%, 100%': { backgroundPosition: '0% 0%' },
+          '50%': { backgroundPosition: '100% 0%' },
         },
       },
       backdropBlur: {

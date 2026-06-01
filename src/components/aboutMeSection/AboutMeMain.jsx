@@ -13,6 +13,7 @@ const AboutMeMain = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.7 }}
+        className="overflow-visible"
       >
         <AboutMeText />
       </motion.div>

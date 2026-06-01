@@ -2,6 +2,7 @@ import NavbarLogo from "./NavbarLogo";
 import NavbarLinks from "./NavbarLinks";
 import NavbarBtn from "./NavbarBtn";
 import NavbarToggler from "./NavbarToggler";
+import LanguageToggle from "./LanguageToggle";
 import { useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 
@@ -41,13 +42,15 @@ const NavbarMain = () => {
             <NavbarLinks />
           </div>
           
-          {/* Desktop CTA Button */}
-          <div className="hidden lg:flex flex-shrink-0">
+          {/* Desktop CTA + Language Toggle */}
+          <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
+            <LanguageToggle />
             <NavbarBtn />
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="lg:hidden z-10">
+          <div className="lg:hidden flex items-center gap-3 z-10">
+            <LanguageToggle />
             <NavbarToggler />
           </div>
         </div>

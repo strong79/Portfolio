@@ -1,0 +1,76 @@
+[
+  {
+    "job": "Full Stack Engineer",
+    "description": "Enterprise Multi-tenant SaaS Analytics Platform",
+    "company": "Takeyou Web Co., Ltd. (Japan)",
+    "date": "Feb 2025 – Apr 2026",
+    "location": "Japan",
+    "status": "Completed",
+    "technologies": ["Ruby on Rails", "PostgreSQL", "Redis", "Sidekiq", "Hotwire", "AWS", "Docker", "Kamal"],
+    "responsibilities": [
+      "Designed and developed a multi-tenant SaaS analytics platform",
+      "Implemented tenant_id-based access control",
+      "Built analytics dashboards and reporting features",
+      "Improved analytics processing performance by approximately 35% through SQL tuning",
+      "Built asynchronous batch processing with Sidekiq",
+      "Managed operations and CI/CD on AWS",
+      "Refactored legacy systems"
+    ]
+  },
+  {
+    "job": "AI Agent Engineer / Lead Engineer",
+    "description": "Enterprise AI Voice Agent Platform",
+    "company": "AI Rudder Pte Ltd (Singapore)",
+    "date": "Apr 2022 – Nov 2024",
+    "location": "Singapore",
+    "status": "Completed",
+    "technologies": ["Python", "FastAPI", "Spring Boot", "OpenAI API", "RAG", "Next.js", "Vue.js", "AWS EKS", "Kubernetes"],
+    "responsibilities": [
+      "Developed enterprise-grade AI voice agent solutions using OpenAI technologies",
+      "Implemented RAG-based knowledge retrieval and FAQ search systems",
+      "Built scalable AI backend services with FastAPI and Spring Boot",
+      "Integrated ASR (Speech Recognition) and TTS (Speech Synthesis) services",
+      "Developed administration dashboards using Next.js and Vue.js",
+      "Designed CRM and third-party system integrations",
+      "Managed microservices architecture on AWS EKS and Kubernetes",
+      "Improved performance through Redis caching and database optimization"
+    ]
+  },
+  {
+    "job": "Full Stack Engineer",
+    "description": "Artemis Weddings Event Management Platform",
+    "company": "Chillybin Web Design Pte Ltd (Singapore)",
+    "date": "Apr 2018 – Feb 2022",
+    "location": "Singapore",
+    "status": "Completed",
+    "technologies": ["Next.js", "Vue.js", "FastAPI", "PostgreSQL", "MySQL", "AWS", "Docker"],
+    "responsibilities": [
+      "Developed an event booking and customer management platform",
+      "Built customer-facing web applications using Next.js",
+      "Developed administration dashboards with Vue.js",
+      "Designed reservation and inquiry management APIs using FastAPI",
+      "Implemented responsive and mobile-first user interfaces",
+      "Improved SEO and website performance",
+      "Managed cloud deployment and operations on AWS",
+      "Collaborated closely with designers and stakeholders"
+    ]
+  },
+  {
+    "job": "Backend Engineer",
+    "description": "My Drum School Web Platform",
+    "company": "Chillybin Web Design Pte Ltd (Singapore)",
+    "date": "Oct 2016 – Mar 2018",
+    "location": "Singapore",
+    "status": "Completed",
+    "technologies": ["PHP", "WordPress", "MySQL", "JavaScript", "jQuery", "AWS"],
+    "responsibilities": [
+      "Developed and customized WordPress-based educational platforms",
+      "Built CMS features and content management workflows",
+      "Developed inquiry forms and lead-generation functionality",
+      "Improved SEO performance and website speed",
+      "Enhanced mobile experience through responsive design",
+      "Developed custom PHP/MySQL functionality",
+      "Supported deployment, maintenance, and operational improvements"
+    ]
+  }
+]

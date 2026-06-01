@@ -1,6 +1,7 @@
 import ExperienceInfo from "./ExperienceInfo";
 import { motion } from "framer-motion";
 import { FaRocket, FaCode } from "react-icons/fa";
+import { useTranslation } from "../../i18n/useTranslation";
 
 const CORE_TECHNOLOGIES = [
   "Python",
@@ -15,6 +16,9 @@ const CORE_TECHNOLOGIES = [
 ];
 
 const ExperienceTopLeft = () => {
+  const { t } = useTranslation();
+  const top = t.experience.topLeft;
+
   return (
     <motion.div
       initial={{ opacity: 0, x: -50 }}
@@ -32,7 +36,7 @@ const ExperienceTopLeft = () => {
             <FaRocket />
           </motion.div>
           <h3 className="text-green font-bold uppercase text-2xl font-special tracking-wider">
-            Since 2016
+            {top.since}
           </h3>
         </div>
 
@@ -42,13 +46,13 @@ const ExperienceTopLeft = () => {
       <div className="bg-black/20 rounded-xl p-6 border border-green/10">
         <div className="flex justify-center items-center gap-6">
           <motion.div whileHover={{ scale: 1.05 }} className="text-center">
-            <ExperienceInfo number="9+" text="Years" />
+            <ExperienceInfo number="9+" text={top.years} />
           </motion.div>
 
           <div className="text-gray-500 font-bold text-xl">|</div>
 
           <motion.div whileHover={{ scale: 1.05 }} className="text-center">
-            <ExperienceInfo number="15+" text="Projects" />
+            <ExperienceInfo number="15+" text={top.projects} />
           </motion.div>
         </div>
       </div>
@@ -57,26 +61,23 @@ const ExperienceTopLeft = () => {
         <div className="flex items-center justify-center gap-2">
           <FaCode className="text-cyan" />
           <span className="text-sm text-gray-400 uppercase tracking-wider">
-            Experience Overview
+            {top.overview}
           </span>
         </div>
 
         <p className="text-gray-300 leading-relaxed text-sm text-center">
-          With <span className="text-green font-semibold">9+ years</span> of
-          experience in Web, SaaS, and AI system development, I have delivered
-          enterprise-grade platforms ranging from educational web services and
-          multi-tenant SaaS applications to AI-powered voice agent solutions.
+          {top.p1.before && `${top.p1.before} `}
+          <span className="text-green font-semibold">{top.p1.highlight}</span>
+          {top.p1.after}
         </p>
 
         <p className="text-gray-300 leading-relaxed text-sm text-center">
-          Experienced across the full software development lifecycle, including
-          architecture design, backend development, frontend implementation,
-          cloud infrastructure, deployment, and system operations.
+          {top.p2}
         </p>
 
         <div>
           <p className="text-sm text-gray-400 uppercase tracking-wider text-center mb-3">
-            Core Technologies
+            {top.coreTechnologies}
           </p>
           <div className="flex flex-wrap justify-center gap-2">
             {CORE_TECHNOLOGIES.map((tech) => (

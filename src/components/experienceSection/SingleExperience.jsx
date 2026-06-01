@@ -1,8 +1,16 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 import { FaCalendarAlt, FaMapMarkerAlt, FaExternalLinkAlt } from "react-icons/fa";
+import { useTranslation } from "../../i18n/useTranslation";
 
 const SingleExperience = ({ experience, index }) => {
+  const { t } = useTranslation();
+
+  const statusLabel =
+    experience.status === "Completed"
+      ? t.experience.status.completed
+      : t.experience.status.current;
+
   return (
     <motion.div
       variants={fadeIn("up", index * 0.2)}
@@ -11,12 +19,9 @@ const SingleExperience = ({ experience, index }) => {
       viewport={{ once: false, amount: 0.3 }}
       className="group relative bg-gradient-to-br from-gray-900/50 to-black/30 backdrop-blur-sm border border-green/20 rounded-2xl p-6 hover:border-green/40 transition-all duration-500 hover:shadow-xl hover:shadow-green/10 hover:-translate-y-2"
     >
-      {/* Glow effect on hover */}
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-green/5 to-cyan/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
       
-      {/* Content */}
       <div className="relative z-10">
-        {/* Header */}
         <div className="flex items-start justify-between mb-4">
           <div className="flex-1">
             <h3 className="text-xl font-bold text-green mb-1 group-hover:text-cyan transition-colors duration-300">
@@ -28,13 +33,11 @@ const SingleExperience = ({ experience, index }) => {
             <p className="text-cyan text-lg font-semibold mb-2">{experience.company}</p>
           </div>
           
-          {/* Status badge */}
           <div className="bg-green/20 text-green px-3 py-1 rounded-full text-sm font-medium border border-green/30">
-            {experience.status || "Current"}
+            {statusLabel}
           </div>
         </div>
 
-        {/* Date and location */}
         <div className="flex flex-wrap gap-4 mb-4 text-sm text-gray-300">
           <div className="flex items-center gap-2">
             <FaCalendarAlt className="text-green" />
@@ -48,10 +51,9 @@ const SingleExperience = ({ experience, index }) => {
           )}
         </div>
 
-        {/* Tech stack */}
         {experience.technologies && (
           <div className="mb-4">
-            <p className="text-sm text-gray-400 mb-2">Tech Stack:</p>
+            <p className="text-sm text-gray-400 mb-2">{t.experience.techStack}</p>
             <div className="flex flex-wrap gap-2">
               {experience.technologies.map((tech, techIndex) => (
                 <span 
@@ -65,9 +67,8 @@ const SingleExperience = ({ experience, index }) => {
           </div>
         )}
 
-        {/* Responsibilities */}
         <div className="mb-4">
-          <h4 className="text-sm font-semibold text-gray-300 mb-3">Key Achievements:</h4>
+          <h4 className="text-sm font-semibold text-gray-300 mb-3">{t.experience.keyAchievements}</h4>
           <ul className="space-y-2">
             {experience.responsibilities.map((resp, respIndex) => (
               <li key={respIndex} className="flex items-start gap-3 text-sm text-gray-300">
@@ -78,7 +79,6 @@ const SingleExperience = ({ experience, index }) => {
           </ul>
         </div>
 
-        {/* Link if available */}
         {experience.link && (
           <div className="pt-4 border-t border-gray-700/50">
             <a 
@@ -87,14 +87,13 @@ const SingleExperience = ({ experience, index }) => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-green hover:text-cyan transition-colors duration-300 text-sm font-medium"
             >
-              <span>View Project</span>
+              <span>{t.experience.viewProject}</span>
               <FaExternalLinkAlt className="text-xs" />
             </a>
           </div>
         )}
       </div>
 
-      {/* Corner decoration */}
       <div className="absolute top-3 right-3 w-8 h-8 border-t-2 border-r-2 border-green/20 group-hover:border-green/40 transition-colors duration-500"></div>
     </motion.div>
   );
